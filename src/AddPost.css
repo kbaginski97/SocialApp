@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.post-creator {
+    border: 1px solid black;
+    min-height: 80px;
+    margin: auto;
+    max-width: 500px;
+}
+
+.add-post-content{
+    text-align: right;
+}
+
+.add-post-content textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.add-post-btn {
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.add-post-btn:hover {
+    background-color: grey;
+}

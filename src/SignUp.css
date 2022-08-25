@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.signup {
+    display: block;
+}
+
+.signup form {
+    justify-content: center;
+    margin: auto;
+    max-width: 600px;
+    padding: 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.signup .signup-form input {
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.signupBtn {
+    margin: 15px;
+    background-color: aqua;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.signupBtn:hover {
+    background-color: grey;
+}
+
+.signup .signupBtn:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+
+.signupBtnLog {
+    margin: 15px;
+    background-color: aqua;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

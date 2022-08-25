@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+.posts-holder {
+    margin: 5px;
+}
+
+.followers {
+    max-width: 500px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.posts {
+    display: flex;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 5px;
+    max-width: 500px;
+    height: auto;
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+
+.post-data {
+    width: 100%;
+}
+
+.post-content {
+    text-align: left;
+    padding: 5px;
+}
+
+.likes {
+    display: block;
+    text-align: right;
+    padding: 5px;
+}
+
+.btnDel {
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btnDel:hover {
+    background-color: grey;
+}
+
+.main-div {
+    display: block;
+    text-align: center;
+}
+
+/* USERS AVATARS     */
+
+.avatar {
+    display: block;
+    margin: 5px;
+}
+
+.avatar img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* LOADING BUTTON */
+
+.load-morebtn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.load-morebtn:hover {
+    background-color: grey;
+}

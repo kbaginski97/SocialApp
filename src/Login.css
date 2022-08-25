@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.login {
+    display: block;
+}
+
+.login form {
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+.login form input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.login form #submitBTN {
+    margin: 5px;
+    background-color: aqua;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    width:60px
+}
+
+.login form #submitBTN:hover {
+    background-color: grey;
+}

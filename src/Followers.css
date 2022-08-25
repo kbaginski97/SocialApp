@@ -1,0 +1,32 @@
+.follower-avatar img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.follow-proposal-holder button {
+    padding: 5px;
+    background-color: aqua;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.follow-proposal-holder button:hover {
+    background-color: grey;
+}
+
+.main-followers {
+    display: flex;
+    max-width: 500px;
+    margin: auto;
+}
+
+.follow-proposal-holder{
+    width: 33.33%;
+    padding:10px
+}
+
+h3 {
+    margin: 10px;
+}
