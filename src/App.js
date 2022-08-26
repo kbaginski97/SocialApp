@@ -1,11 +1,10 @@
 import "./App.css";
-import { Route, Link, Routes, Navigate } from "react-router-dom";
+import { Route, Link, Routes, Navigate, HashRouter, } from "react-router-dom";
 import axios from "axios";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import Home from "./Home";
 import React, { useState } from "react";
-
 
 function App() {
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')))
@@ -28,6 +27,7 @@ function App() {
   }
 
   return (
+
     <div className="App">
       <div className="Main-nav">
         <nav>
@@ -46,11 +46,11 @@ function App() {
           </li>}
         </nav>
       </div>
-      <Routes>
-        <Route path="/" element={<Home setUser={setUser} user={user} />} />
-        <Route path="/Login" element={<Login setUser={setUser} user={user} />} />
-        <Route path="/SignUp" element={<SignUp user={user} />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home setUser={setUser} user={user} />} />
+          <Route path="/Login" element={<Login setUser={setUser} user={user} />} />
+          <Route path="/SignUp" element={<SignUp user={user} />} />
+        </Routes>
     </div>
   );
 }
