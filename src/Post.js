@@ -79,14 +79,18 @@ function Post(props) {
                         {props.user?.username === props.post.user.username &&
                             <button onClick={() => props.deletingPost(props.post.id)} className="btnDel">Usuń</button>
                         }
+
                         {props.user && props.user.username !== props.post.user.username &&
                             (<button className="unfollowBtn" onClick={() => disFollow(props.post.user.id)}> Unfollow </button>)
                         }
-                        {likesValue ?
-                            <button className="like-button" onClick={() => { removeLike(props.post.id) }}> Dislike </button>
-                            :
-                            <button className="like-button" onClick={() => addLike(props.post.id)}> Like </button>
-                        }
+
+                        {props.user && (
+                            likesValue ?
+                                <button className="like-button" onClick={() => { removeLike(props.post.id) }}> Dislike </button>
+                                :
+                                <button className="like-button" onClick={() => addLike(props.post.id)}>Like</button>
+                        )}
+
                         {likeCount}
 
                     </div>
@@ -95,5 +99,7 @@ function Post(props) {
         </div >
     )
 }
+
+console.log(typeof(42.1))
 
 export default Post;
