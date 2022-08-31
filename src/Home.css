@@ -9,7 +9,7 @@
 .followers {
     max-width: 500px;
     border: 1px solid black;
-    margin: auto;
+    margin: 5px auto;
 }
 
 .posts {
@@ -45,12 +45,12 @@
 
 .btnDel {
     padding: 10px;
-    background-color: aqua;
-    border-radius: 5px;
+    background-color: #354faa;
+    border-radius: 10px;
     color: white;
     border: none;
     cursor: pointer;
-    margin-right: 5px;
+    margin: 5px;
 }
 
 .btnDel:hover {
@@ -77,13 +77,13 @@
 /* LOADING BUTTON */
 
 .load-morebtn {
-    margin-top: 20px;
     padding: 10px;
-    background-color: aqua;
-    border-radius: 5px;
+    background-color: #354faa;
+    border-radius: 10px;
     color: white;
     border: none;
     cursor: pointer;
+    margin: 5px;
 }
 
 .load-morebtn:hover {

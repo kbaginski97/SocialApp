@@ -4,12 +4,13 @@
 }
 
 .follow-proposal-holder button {
-    padding: 5px;
-    background-color: aqua;
-    border-radius: 5px;
+    padding: 10px;
+    background-color: #354faa;
+    border-radius: 10px;
     color: white;
     border: none;
     cursor: pointer;
+    margin: 5px;
 }
 
 .follow-proposal-holder button:hover {

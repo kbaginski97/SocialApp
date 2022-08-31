@@ -21,14 +21,14 @@
 }
 
 .login form #submitBTN {
-    margin: 5px;
-    background-color: aqua;
-    border: none;
     padding: 10px;
+    background-color: #354faa;
     border-radius: 10px;
-    cursor: pointer;
     color: white;
-    width:60px
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    width: 60px;
 }
 
 .login form #submitBTN:hover {

@@ -21,13 +21,13 @@
 }
 
 .signupBtn {
-    margin: 15px;
-    background-color: aqua;
-    color: white;
-    border-radius: 10px;
-    border: none;
     padding: 10px;
+    background-color: #354faa;
+    border-radius: 10px;
+    color: white;
+    border: none;
     cursor: pointer;
+    margin: 5px;
 }
 
 .signupBtn:hover {

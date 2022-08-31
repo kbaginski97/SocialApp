@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./Followers.css";
+import { getValue } from "@testing-library/user-event/dist/utils";
 
 function Followers(props) {
 
@@ -12,32 +13,30 @@ function Followers(props) {
             .post("https://akademia108.pl/api/social-app/follows/recommendations")
             .then((res) => {
                 prevFollow(res.data)
-                console.log(res.data)
+            })
+            .catch((err) => {
+                console.log(err);
             })
     }
 
     useEffect(() => {
         getFollowProposal()
-    }, [])
+    }, [props.posts])
 
     const newFollow = (id) => {
 
-        let getNewFollower = {
-            "leader_id": id
-        }
-
         axios
-            .post("https://akademia108.pl/api/social-app/follows/follow", getNewFollower
-            )
-            .then((res => {
-                console.log(res.data)
+            .post("https://akademia108.pl/api/social-app/follows/follow", {
+                leader_id: id
+            })
+            .then((res) => {
                 props.followersPosts()
-            }))
+                console.log(res.data)
+            })
             .catch((err => {
                 console.log(err)
             }))
     }
-
 
     return (
         <div className="main-followers">
@@ -47,7 +46,7 @@ function Followers(props) {
                         <div className="follow-prop">
                             <h3>{followers.username}</h3>
                             <div className="follower-avatar">
-                                <img src={followers.avatar_url} />
+                                <img src={followers.avatar_url} alt={followers.username} />
                             </div>
                             <button onClick={() => newFollow(followers.id)}>Follow</button>
                         </div>

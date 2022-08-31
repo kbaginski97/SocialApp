@@ -32,8 +32,6 @@ function Home(props) {
     getPosts()
   }, [])
 
-  console.log(posts);
-
   const getNewerPost = () => {
 
     let lastUpdate = {
@@ -69,10 +67,9 @@ function Home(props) {
       }
       {props.user &&
         <div className="followers">
-          <Followers followersPosts={getPosts} user={props.user} />
+          <Followers followersPosts={getPosts} user={props.user} posts={posts.posts}/>
         </div>
       }
-
       {posts.map((post) => {
 
         return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Post.css";
-import Followers from "./Followers";
+
 
 function Post(props) {
 
@@ -43,14 +43,13 @@ function Post(props) {
     const disFollow = (id) => {
 
         let followerId = {
-            "leader_id": id
+            leader_id: id
         }
 
         axios
             .post("https://akademia108.pl/api/social-app/follows/disfollow", followerId)
             .then((res => {
                 props.getPost()
-                console.log(res.data)
             }))
             .catch((err => {
                 console.log(err.data)
