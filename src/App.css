@@ -3,13 +3,6 @@
   width: 100%;
 }
 
-.Main-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
 a:visited {
   color: inherit;
 }
@@ -20,11 +13,34 @@ a {
 
 li {
   display: inline-block;
-  list-style: none;
-  padding: 15px;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 li:hover {
+  color: #fff;
   background-color: aqua;
-  transition: 0.3s;
+  transition: 0.5s;
+  text-decoration: none;
 }
+
+.Main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+  padding-block: 20px;
+  background-color: #354faa;
+}
+
