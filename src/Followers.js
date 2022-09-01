@@ -24,14 +24,12 @@ function Followers(props) {
     }, [props.posts])
 
     const newFollow = (id) => {
-
         axios
             .post("https://akademia108.pl/api/social-app/follows/follow", {
                 leader_id: id
             })
             .then((res) => {
                 props.followersPosts()
-                console.log(res.data)
             })
             .catch((err => {
                 console.log(err)

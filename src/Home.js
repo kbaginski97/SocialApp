@@ -67,7 +67,7 @@ function Home(props) {
       }
       {props.user &&
         <div className="followers">
-          <Followers followersPosts={getPosts} user={props.user} posts={posts.posts}/>
+          <Followers followersPosts={getPosts} user={props.user} posts={posts}/>
         </div>
       }
       {posts.map((post) => {
