@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Post.css";
 
-
 function Post(props) {
 
     const [likeCount, setLikeCount] = useState(props.post.likes.length)
@@ -89,9 +88,7 @@ function Post(props) {
                                 :
                                 <button className="like-button" onClick={() => addLike(props.post.id)}>Like</button>
                         )}
-
-                        {likeCount}
-
+                            {likeCount}
                     </div>
                 </div>
             </div>
@@ -99,6 +96,6 @@ function Post(props) {
     )
 }
 
-console.log(typeof(42.1))
+console.log(typeof (42.1))
 
 export default Post;

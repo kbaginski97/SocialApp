@@ -59,7 +59,7 @@ function Home(props) {
   }
 
   return (
-    <div className="main-div">
+    <div className="main-div" id="mainDiv">
       {props.user &&
         <div className="post-creator">
           <AddPost newPost={getNewerPost} />

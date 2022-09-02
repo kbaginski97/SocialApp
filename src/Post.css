@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,300&display=swap');
+
+.likes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .like-button {
     padding: 10px;
     background-color: #354faa;
@@ -24,4 +32,9 @@
 
 .unfollowBtn:hover {
     background-color: grey;
+}
+
+.post-content {
+    font-family: 'Libre Franklin';
+    font-weight: 400;
 }

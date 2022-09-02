@@ -7,19 +7,21 @@
 }
 
 .followers {
-    max-width: 500px;
+    max-width: 600px;
     border: 1px solid black;
     margin: 5px auto;
+    background-color: rgba(128, 128, 128, 0.075);
 }
 
 .posts {
     display: flex;
-    border: 1px solid black;
     margin: auto;
-    border-radius: 5px;
-    max-width: 500px;
+    max-width: 600px;
     height: auto;
+    border: 1px solid grey;
+    background-color: rgba(128, 128, 128, 0.075);
 }
+
 
 .post-info {
     display: flex;
